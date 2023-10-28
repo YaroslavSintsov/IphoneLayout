@@ -276,6 +276,12 @@ body{
         border: none;
         cursor: cell;
         position: relative;
+        z-index: 50;
+    }
+    .logof,
+    .phone{
+        position: relative;
+        z-index: 50;
     }
     .btn-line{
         position: absolute;
@@ -284,8 +290,53 @@ body{
         background-color: #fff;
         height: 2px;
     }
+    .btn-line:nth-child(1){
+        top: 0;
+    }
+    .btn-line:nth-child(2){
+        top: 20px;
+    }
+    .btn-line:nth-child(3){
+        top: 20px;
+    }
+    .btn-line:nth-child(4){
+        top: 40px;
+    }
+    .menu-open .btn-line:nth-child(1){
+        transform: scaleX(0);
+    }
+    .menu-open .btn-line:nth-child(2){
+        transform: rotate(45deg);
+    }
+    .menu-open .btn-line:nth-child(3){
+        transform: rotate(-45deg);
+    }
+    .menu-open .btn-line:nth-child(4){
+        transform: scaleX(0);
+    }
     .menu{
-        display: none;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        background-color: #000000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transform: translateY(-100%);
+    }
+    .menu-open .menu{
+        transform: translateY(0%);
+    }
+    .menu-item{
+        padding: 50px 0;
+        font-size: 56px;
+    }
+    .menu-main{
+        padding: 50px 0;
+        font-size: 56px;
     }
     .img-new{
         display: none;
