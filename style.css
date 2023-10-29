@@ -237,9 +237,21 @@ body {
     padding: 50px 20px;
 }
 
-@media (max-width:1600px) {
+@media (max-width:1900px) {
     .contacts-btn {
         align-items: center;
+    }
+
+    .color-list {
+        flex-wrap: wrap;
+    }
+
+    .color-item {
+        width: 50%;
+    }
+
+    .menu-btn {
+        display: none;
     }
 }
 
@@ -278,6 +290,8 @@ body {
         width: 50%;
     }
 }
+
+@media (max-width:941px) {}
 
 @media (max-width:940px) {
     .menu-btn {
